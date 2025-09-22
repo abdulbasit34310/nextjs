@@ -10,12 +10,18 @@ const NavigationBar = () => {
         setShowMenu(!showMenu);
     };
 
+    const styles = {
+        color: 'blue',
+        fontSize: '16px',
+        padding: '10px'
+    };
+
     return (
         <header>
             <div className="container">
                 <div className="grid navbar-grid">
                     <div className="logo">
-                        <h1>Abdul Basit</h1>
+                        <h1 style={styles}>Abdul Basit</h1>
                     </div>
 
                     <nav className={showMenu ? "menu-mobile" : "menu-web"}>
