@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const watchAppearanceSchema = new mongoose.Schema({
+const listSchema = new mongoose.Schema({
     celebrity: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Celebrity",
+        ref: "categorySchema",
         required: true
     },
     watch: {
@@ -23,4 +23,4 @@ const watchAppearanceSchema = new mongoose.Schema({
     timestamps: true
 });
 
-export default mongoose.model("listModels", watchAppearanceSchema);
+export default mongoose.model("listSchema", listSchema);

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const watchModels = new mongoose.Schema({
+const watchSchema = new mongoose.Schema({
     brand: {
         type: String,
         required: [true, "Type Watch Brand"]
@@ -12,4 +12,4 @@ const watchModels = new mongoose.Schema({
 }, {
     timestamps: true
 });
-export default mongoose.model("watchModels", watchModels);
+export default mongoose.model("watchSchema", watchSchema);

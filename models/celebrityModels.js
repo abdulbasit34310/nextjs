@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const celebrityModels = new mongoose.Schema({
+const celebritySchema = new mongoose.Schema({
     name: {
         type: String,
         required: [true, "Type Celebrity Name"]
@@ -14,4 +14,4 @@ const celebrityModels = new mongoose.Schema({
     timestamps: true
 });
 
-export default mongoose.model("celebrityModels", celebrityModels);
+export default mongoose.models.celebritySchema || mongoose.model("celebritySchema", celebritySchema);

@@ -1,18 +1,7 @@
 "use client";
 
-import { User, Users, Star, TrendingUp } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-
-export const metadata = {
-    title: 'My Blog',
-    description: '...',
-    authors: [
-        { name: "Abdul Basit" },
-        { name: "Urwah Khan", url: "nextjs.com" },
-    ],
-    keywords: ["nextjs", "reactjs", "fullstack"],
-}
 
 const Service = () => {
     const [userInfo, setUserInfo] = useState({});
