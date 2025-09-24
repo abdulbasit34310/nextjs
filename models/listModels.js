@@ -8,7 +8,7 @@ const listSchema = new mongoose.Schema({
     },
     watch: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Watch",
+        ref: "watchSchema",
         required: true
     },
     pictureUrl: {

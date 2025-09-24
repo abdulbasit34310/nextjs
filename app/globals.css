@@ -518,3 +518,44 @@ a:hover {
     left: 20px;
   }
 }
+
+.list-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+}
+
+.list-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.item-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.list-item {
+  background-color: #341eff;
+  border: 1px solid "red";
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.list-item:last-child {
+  margin-bottom: 0; /* No margin after the last item */
+}
+
+.list-item:hover {
+  background-color: rgb(194, 65, 65)0f0;
+  cursor: pointer;
+}

@@ -12,11 +12,10 @@ async function getCelebrity() {
 const Locations = async () => {
     const celebrity = await getCelebrity();
     return (
-        <div>
-            <h1>celebrity</h1>
-            <ul>
+        <div className="list-container">
+            <ul className="item-list">
                 {celebrity.map((category) => (
-                    <li key={category._id}>{category.name} {category.category}</li>
+                    <li className="list-item" key={category._id}>{category.name}</li>
                 ))}
             </ul>
         </div>
